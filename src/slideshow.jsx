@@ -50,7 +50,7 @@ const Slideshow = () => {
   
   useEffect(() => {
     showSlides(slideIndex);
-  }, [slideIndex]);
+  }, [slideIndex , showSlides]);
 
   return (
     <div>
@@ -61,12 +61,12 @@ const Slideshow = () => {
           </div>
         ))}
 
-        <a className="prev" onClick={() => plusSlides(-1)}>
+        <p className="prev" onClick={() => plusSlides(-1)}>
           ❮
-        </a>
-        <a className="next" onClick={() => plusSlides(1)}>
+        </p>
+        <p className="next" onClick={() => plusSlides(1)}>
           ❯
-        </a>
+        </p>
       </div>
       <br />
       <div style={{ textAlign: "center" }}>
