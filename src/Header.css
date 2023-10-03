@@ -1,0 +1,19 @@
+.containerStyle {
+    display: "flex";
+    align-items: "center";
+    justify-content: "space-between";
+    font-size: "20px";
+    margin: "5px";
+    padding: "5px";
+    background-color: "#94e5e7cb";
+
+}
+
+.titleStyle{
+    margin: "0";
+  };
+
+.listItemStyle{
+    margin: "0 20px";
+  };
+    
