@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "./card";
 import customerlist from "./customerlist";
-import { Button } from "semantic-ui-react";
+//import { Button } from "semantic-ui-react";
 import "./card.css";
 
 
