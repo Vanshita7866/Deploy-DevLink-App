@@ -17,10 +17,6 @@ const images = [
 const Slideshow = () => {
   const [slideIndex, setSlideIndex] = useState(1);
 
-  useEffect(() => {
-    showSlides(slideIndex);
-  }, [slideIndex,showSlides]);
-
   const plusSlides = (n) => {
     setSlideIndex((prevIndex) => prevIndex + n);
   };
@@ -51,6 +47,10 @@ const Slideshow = () => {
     (slides[slideIndex - 1]).style.display = "block";
     dots[slideIndex - 1].className += " active";
   };
+  
+  useEffect(() => {
+    showSlides(slideIndex);
+  }, [slideIndex]);
 
   return (
     <div>
