@@ -19,7 +19,7 @@ const Slideshow = () => {
 
   useEffect(() => {
     showSlides(slideIndex);
-  }, [slideIndex]);
+  }, [slideIndex,showSlides]);
 
   const plusSlides = (n) => {
     setSlideIndex((prevIndex) => prevIndex + n);
