@@ -57,7 +57,7 @@ const Slideshow = () => {
       <div className="slideshow-container">
         {images.map((image, index) => (
           <div className="mySlides fade" key={index}>
-            <img src={image} style={{ height: "300px", width: "100%" }} />
+            <img src={image} style={{ height: "300px", width: "100%" }} alt ={"slideshow images"}/>
           </div>
         ))}
 
