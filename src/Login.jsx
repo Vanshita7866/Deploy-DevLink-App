@@ -5,7 +5,7 @@ import Header from "./Header";
 import { Link } from "react-router-dom"
 import { useNavigate } from "react-router-dom";
 import { signInAuthWithEmailAndPassword } from './utils/firebase'
-import { UserContext } from './context/user.context'
+import { UserContext } from './user.context'
 
 const Login= () => {
   const navigate = useNavigate();
