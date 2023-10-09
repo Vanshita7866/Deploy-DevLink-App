@@ -1,15 +1,13 @@
 import React from "react";
 import { useState , useContext} from 'react';
 import "./login_signup.css";
-import Header from "./Header";
 import { Link } from "react-router-dom"
 import { useNavigate } from "react-router-dom";
 import { signInAuthWithEmailAndPassword } from './utils/firebase'
 import { UserContext } from './user.context'
-
 const Login= () => {
   const navigate = useNavigate();
-    const { currentUser, setCurrentUser } = useContext(UserContext)
+  const { currentUser, setCurrentUser } = useContext(UserContext)
 
     const [contact, setContact] = useState({
         email: '',
@@ -33,7 +31,7 @@ const Login= () => {
 
         try {
             const response = await signInAuthWithEmailAndPassword(email, password)
-            console.log(response)
+            setCurrentUser(response)
             alert("You are now signed in.");
             navigate('/');
         }
@@ -47,7 +45,6 @@ const Login= () => {
       setCurrentUser(null);
   }
   return <div>
-      <Header />
     {
       currentUser === null ?
       <form className="signInForm">
