@@ -9,6 +9,7 @@ import { UserContext } from './user.context'
 
 const Login= () => {
   const navigate = useNavigate();
+    const { currentUser, setCurrentUser } = useContext(UserContext)
 
     const [contact, setContact] = useState({
         email: '',
