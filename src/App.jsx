@@ -7,7 +7,7 @@ import Login from './Login'
 import Signup from "./Signup";
 import { Routes, Route } from 'react-router-dom'
 import { BrowserRouter } from 'react-router-dom'
-import { UserProvider } from './context/user.context';
+import { UserProvider } from './user.context';
 
 function App() {
   return (
